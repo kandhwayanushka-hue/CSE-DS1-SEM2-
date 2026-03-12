@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 19F</title>
+</head>
+<body>
+    <h1>Web 19F</h1>
+    <script>
+        // JavaScript code can be added here
+        console.log("Welcome to Web 19F!");
+        var p=10;
+        var b="abess";
+        var c=true;
+        var d=3.14;
+        var e=null;
+        var f=undefined;
+        console.log("Value of p: ", + p);
+        console.log("Value of b: " ,+ b);
+        console.log("Value of c: ", + c);
+        console.log("Value of d: " ,+ d);
+        console.log("Value of e: " ,+ e);
+        console.log("Value of f: ", + f);
+        {
+            var p=20;
+            console.log(p);//this does not show error as var can be defined multiple times for the same variable in the same scope but int cannot be defined multiple times for the same variable in the same scope
+        }
+        {
+            int p=20;
+            console.log(p);//this shows error as int can be defined multiple times for the ssame variable in the same scope but var cannot be defined multiple times for the same variable in the same scope
+        }
+        
+        let b="warden";
+        b="bad";
+        console.log(b);//this shows error as let cannot be defined multiple times for the same variable in the same scope but var can be defined multiple times for the same variable in the same scope
+        let z="hello";
+        console.log(z);
+        <p>This is a sample HTML file for Web 19F.</p>
+    </script>
+</body>
+</html>
