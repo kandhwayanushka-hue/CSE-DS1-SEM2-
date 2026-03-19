@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1>DOM Manipulation</h1>
+    <h1 id="myHeading">hello DOM</h1>
+    <p class="myParagraph">This is a sample paragraph.</p>
+    <p id="demo">This is a sample paragraph.</p>
+    <button onclick="changeText()">Click me to change text</button>
+    
+    <script>
+        function changeText() {
+            document.getElementById("demo").innerHTML = "The text has been changed!";
+            document.getElementById("myHeading").style.color = "red";
+            document.getElementById("paragraph").style.fontSize = "20px";
+            <script src="dom.js"></script>;
+        }
+</body>
+</html>

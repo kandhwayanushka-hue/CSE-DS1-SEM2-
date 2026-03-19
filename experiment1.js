@@ -2,7 +2,7 @@ function calculateResult() {
     let n = document.getElementById("subject").value;
     let total =0;
     for(let i=1;i<=n;i++){
-        let marks = parseFloat("Enter marks for subjects " + i + ": ");
+        let marks = parseFloat(prompt("Enter marks for subjects " + i));
         total += marks;
     }
     let average = total / n;
