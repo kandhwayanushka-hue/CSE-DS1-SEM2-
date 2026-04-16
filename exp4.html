@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 4</title>
+    <link rel="stylesheet" href="exp4.css">
+</head>
+<body>
+<div class="container">
+    <h2>Employee Salary Management</h2>
+
+    <input type="text" id="name" placeholder="Employee Name">
+    <input type="text" id="empId" placeholder="Employee ID"><br>
+
+    <input type="number" id="salary" placeholder="Salary">
+    <input type="text" id="dept" placeholder="Department"><br>
+
+    <button class="add" onclick="addEmployee()">Add</button>
+    <button class="display" onclick="displayEmployees()">Display</button>
+    <button class="total" onclick="totalSalary()">Total</button>
+    <button class="avg" onclick="averageSalary()">Average</button>
+    <button class="delete" onclick="deleteAll()">Delete All</button>
+
+    <br><br>
+
+    <input type="text" id="search" placeholder="Search by name">
+    <button class="filter" onclick="searchEmployee()">Search</button>
+
+    <div id="output"></div>
+</div>
+ <script src="exp4.js"></script>
+</body>
+</html>
