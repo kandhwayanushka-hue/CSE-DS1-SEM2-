@@ -1,0 +1,25 @@
+body{
+    font-family:arial;
+    background-color: :grey;
+    text-align:center;
+    padding:40px;
+}
+.container{
+    background-color: white;
+    padding:35px;
+    width:auto;
+    margin:auto;
+}
+button{
+    padding:12px;
+    margin-top:15px;
+    background-color: Blue;
+    font-size: 16px;
+}
+#result{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size:20px;
+    padding:10px;
+    background-color: green;
+}

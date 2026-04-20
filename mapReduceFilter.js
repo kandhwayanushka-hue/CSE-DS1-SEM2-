@@ -1,0 +1,12 @@
+const num =[1,2,3,4,5,6,7,8,9,10];
+num.forEach(n)=>console.log(n));
+const num1=num.map(n)=>{return n*2};
+console.log(num1);
+const num2=num.filter((n)=>n*2);
+console.log(num2);
+const multipleOf3=num.map(n)=>{return n*3};
+console.log(multipleOf3);
+const divisibleBy3=num.filter((n)=>n%3===0);
+console.log(divisibleBy3);
+const sumOfNumArray=num.reduce((acc,val)=>acc+val,0);
+console.log(sumOfNumArray);
