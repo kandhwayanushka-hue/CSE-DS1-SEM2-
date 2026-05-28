@@ -1,130 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechStore - Bootstrap UI Components</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Experiment 02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+crossorigin="anonymous">
+<style>
+    div img{
+        height: 300px;
+    }
+</style>
+    </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">TechStore</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container my-5">
-    <h2 class="text-center mb-4">Our Products</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 1">
-          <div class="card-body">
-            <h5 class="card-title">Wireless Headphones</h5>
-            <span class="badge bg-success mb-2">New</span>
-            <p class="card-text">High-quality wireless headphones with noise cancellation.</p>
-            <p class="fw-bold">$79.99</p>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">View Details</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 2">
-          <div class="card-body">
-            <h5 class="card-title">Smart Watch</h5>
-            <span class="badge bg-warning text-dark mb-2">Sale</span>
-            <p class="card-text">Feature-rich smartwatch with health tracking.</p>
-            <p class="fw-bold">$149.99</p>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal2">View Details</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 3">
-          <div class="card-body">
-            <h5 class="card-title">Bluetooth Speaker</h5>
-            <span class="badge bg-info mb-2">Popular</span>
-            <p class="card-text">Portable speaker with deep bass and 12hr battery life.</p>
-            <p class="fw-bold">$39.99</p>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal3">View Details</button>
-          </div>
-        </div>
-      </div>
-    </div>
+        <div class="row bg-info text-center align-items-center">
+            <div class="col-lg-12 p-0 m-0">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--first row end-->
+        <div class="row my-2 gy-2">
+            <div class="col-lg-4 p-0">
+                <div class="card">
+  <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853" 
+class="card-img-top" alt="laptop">
+  <div class="card-body">
+    <h5 class="card-title">Laptop</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
   </div>
-
-  <div class="modal fade" id="productModal1" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Wireless Headphones</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <p>Experience premium sound with our wireless headphones. Features active noise cancellation, 30-hour battery life, and comfortable over-ear design.</p>
-          <p class="fw-bold">Price: $79.99</p>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-      </div>
-    </div>
+</div>
+            </div>
+            <div class="col-lg-4 p-0">
+                <div class="card">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" 
+class="card-img-top" alt="phone">
+  <div class="card-body">
+    <h5 class="card-title">iphone</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
   </div>
-
-  <div class="modal fade" id="productModal2" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Smart Watch</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <p>Stay connected with our smartwatch featuring heart rate monitoring, step tracking, GPS, and a vibrant AMOLED display.</p>
-          <p class="fw-bold">Price: $149.99</p>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-      </div>
-    </div>
+</div>
+            </div>
+            <div class="col-lg-4 p-0">
+                <div class="card">
+  <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0" class="card-img-top" alt="tablet">
+  <div class="card-body">
+    <h5 class="card-title">Tablet</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
   </div>
-
-  <div class="modal fade" id="productModal3" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Bluetooth Speaker</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <p>Take your music anywhere with our portable Bluetooth speaker. Deep bass, 360-degree sound, and water-resistant design.</p>
-          <p class="fw-bold">Price: $39.99</p>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">&copy; 2026 TechStore. All rights reserved.</p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+            </div>
+        </div><!--second row end-->
+        <div class="row text-bg-secondary text-center align-items-center" style="height: 60px;">
+            <div class="col-lg-12">
+                <h2>&copy; 2023 My Website. All rights reserved.</h2>
+            </div>
+        </div><!--footer row end-->
+    </div><!--container end-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 </html>

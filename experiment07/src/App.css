@@ -1,2 +1,1 @@
-.app { text-align: center; font-family: Arial; padding: 20px; }
-.student-card { border: 1px solid #ccc; border-radius: 8px; padding: 16px; margin: 10px auto; max-width: 300px; background: #f9f9f9; }
+.student-container { display: flex; justify-content: center; gap: 20px; padding: 20px; }
