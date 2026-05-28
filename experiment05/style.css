@@ -1,0 +1,6 @@
+.app { font-family: Arial; max-width: 600px; margin: 20px auto; padding: 20px; }
+table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+th, td { border: 1px solid #333; padding: 8px; text-align: left; }
+th { background: #4CAF50; color: #fff; }
+input { margin: 5px; padding: 5px; }
+button { margin: 5px; padding: 8px 16px; cursor: pointer; }

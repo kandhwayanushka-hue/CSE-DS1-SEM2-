@@ -4,68 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Employee Records</title>
-  <style>
-    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
-    th, td { border: 1px solid #333; padding: 8px; text-align: left; }
-    th { background: #4CAF50; color: #fff; }
-    input { margin: 5px; padding: 5px; }
-    button { margin: 5px; padding: 8px 16px; cursor: pointer; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Employee Management</h2>
-  <h3>Add Employee</h3>
-  <input id="name" placeholder="Name">
-  <input id="salary" type="number" placeholder="Salary">
-  <input id="dept" placeholder="Department">
-  <button onclick="addEmployee()">Add</button>
-  <h3>Actions</h3>
-  <button onclick="displayAll()">Display All</button>
-  <button onclick="filterHighSalary()">Salary > 50000</button>
-  <button onclick="showStats()">Total & Avg Salary</button>
-  <button onclick="countDept()">Count by Dept</button>
-  <div id="output"></div>
-  <script>
-    const employees = [];
-    function addEmployee() {
-      const name = document.getElementById("name").value;
-      const salary = parseFloat(document.getElementById("salary").value);
-      const dept = document.getElementById("dept").value;
-      if (name && salary && dept) {
-        employees.push({ name, salary, dept });
-        document.getElementById("output").innerHTML = `<p style="color:green;">Employee added successfully!</p>`;
-      }
-    }
-    function displayAll() {
-      let html = "<table><tr><th>Name</th><th>Salary</th><th>Department</th></tr>";
-      employees.forEach(e => html += `<tr><td>${e.name}</td><td>₹${e.salary}</td><td>${e.dept}</td></tr>`);
-      html += "</table>";
-      document.getElementById("output").innerHTML = html;
-    }
-    function filterHighSalary() {
-      const filtered = employees.filter(e => e.salary > 50000);
-      let html = "<h4>Employees with salary > ₹50,000</h4>";
-      if (filtered.length === 0) html += "<p>None</p>";
-      else {
-        html += "<table><tr><th>Name</th><th>Salary</th><th>Department</th></tr>";
-        filtered.forEach(e => html += `<tr><td>${e.name}</td><td>₹${e.salary}</td><td>${e.dept}</td></tr>`);
-        html += "</table>";
-      }
-      document.getElementById("output").innerHTML = html;
-    }
-    function showStats() {
-      const total = employees.reduce((acc, e) => acc + e.salary, 0);
-      const avg = employees.length ? total / employees.length : 0;
-      document.getElementById("output").innerHTML = `
-        <p><strong>Total Salary Payout:</strong> ₹${total}</p>
-        <p><strong>Average Salary:</strong> ₹${avg.toFixed(2)}</p>
-      `;
-    }
-    function countDept() {
-      const dept = prompt("Enter department name:");
-      const count = employees.filter(e => e.dept.toLowerCase() === dept.toLowerCase()).length;
-      document.getElementById("output").innerHTML = `<p>Employees in ${dept}: ${count}</p>`;
-    }
-  </script>
+  <div class="app">
+    <h2>Employee Management</h2>
+    <h3>Add Employee</h3>
+    <input id="name" placeholder="Name">
+    <input id="salary" type="number" placeholder="Salary">
+    <input id="dept" placeholder="Department">
+    <button onclick="addEmployee()">Add</button>
+    <h3>Actions</h3>
+    <button onclick="displayAll()">Display All</button>
+    <button onclick="filterHighSalary()">Salary > 50000</button>
+    <button onclick="showStats()">Total & Avg Salary</button>
+    <button onclick="countDept()">Count by Dept</button>
+    <div id="output"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
